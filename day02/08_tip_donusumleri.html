@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+    let age = "33";
+    console.log(age, typeof (age) );
+
+    age = age +15 ;
+    console.log(age, typeof age);
+    
+    age = Number(age) + 15 ;
+    console.log(age,typeof age)
+
+  const yas = prompt("yasinizi giriniz");
+  console.log(yas , typeof yas);
+  let yeniyas = Number(yas) +1; // parseint , parsefloat
+  console.log(yeniyas, typeof yeniyas )
+  
+  // nan bir hata degil degerdir
+  const result = Number("123dfg");
+  console.log (result, isNaN(result));
+
+  // bu islem sonucu infinite degeridir, hata vermez
+
+  console.log(5/0)
+    </script>
+</body>
+</html>
