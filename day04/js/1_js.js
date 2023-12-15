@@ -22,4 +22,15 @@ headel.innerText="hello javascript."
 const spanels = document.querySelectorAll("aboutus>span")
 console.log(spanels)
 
-spanels[0].innerText="hello"
+
+
+//litenin ikici elemanini alip son elemanina ekleyen 
+
+const listitemtext = document.querySelector(".menu li:nth-child(2)").innerText
+console.log(listitemtext)
+document.querySelector(".menu li:last-child").innerText = listitemtext
+
+// listedeki 4. elemanin yerine koyu bir sekilde hello yazan kod 
+
+const listitem4el = document.querySelector(".menu li:nth-child(4)")
+listitem4el.innerHTML = "<b>hello</b>"
