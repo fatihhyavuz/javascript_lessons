@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <input type="number" id="sayibir" placeholder="sayi 1" >
+    <input type="number" id="sayiiki" placeholder="sayi 2" >
+    <button onclick="topla()">topla</button>
+    <h2 id="sonuc"></h2>
+
+
+    <script>
+
+      
+       const bir = document.querySelector("#sayibir")
+       const iki = document.querySelector("#sayiiki")
+     function topla() {
+ 
+         result = Number(bir.value) + Number(iki.value)
+        console.log(result)
+
+       document.querySelector("#sonuc").innerHTML= ` sonuc: ${result} `
+     }
+       
+
+     
+    </script>
+</body>
+</html>
