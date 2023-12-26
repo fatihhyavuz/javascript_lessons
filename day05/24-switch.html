@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if</title>
+</head>
+<body>
+    
+    <input type="number" id="txtprice" placeholder="type the price">
+    <button onclick="setprice()">calculate</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+
+  function setprice(){
+  const txtprice =   document.querySelector("#txtprice")
+let result = txtprice.value;
+let discount ;
+
+switch(true){
+    case result > 1500
+     result -= result *15/100 
+      discount = 15 
+      break
+}
+
+  document.querySelector("#result").innerHTML = `${result}$`
+  }
+
+    </script>
+</body>
+</html>
