@@ -6,16 +6,22 @@
     <title>ternary</title>
 </head>
 <body>
-    <input type="number" id="txtsalary">
-    <input type="radio" name="status" id="rdretired" > <label for="rdretired" onclick="setsalary()">emekli</label>
-    <input type="radio" name="status" id="rdemployee"><label for="rdemployee" onclick="setsalary()">calisan</label>
+    <input type="number" id="txtsalary" oninput="setsalary()">
+    <input type="radio" name="status" id="rdretired" onclick="setsalary() value="1"> 
+    <label for="rdretired">emekli</label>
+    <input type="radio" name="status" id="rdemployee"onclick="setsalary()>
+    <label for="rdemployee" ">calisan</label>
 
     <h2 id="result"></h2>
 
     <script>
-
+     const  txtsalary = document.querySelector("#txtsalary")
+     const resultel = document.querySelector("#result")
+     const status = document.querySelector('input[name="status"]:checked')
      function setsalary(){
         alert("hello")
+
+        salary = status.value === "retired" ? salary*0.9 : salary *0.05;
      }
 
     </script>
