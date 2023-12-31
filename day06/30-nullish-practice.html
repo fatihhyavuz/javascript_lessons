@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nullish</title>
+</head>
+<body>
+    
+<h1 id="result"></h1>
+
+    <script>
+
+        function setarea(a,b){
+            const result = (a ?? 0) * (b ?? 0);
+
+            return result;
+        }
+
+        const area1 = setarea(10,20)
+          console.log(area1)
+
+          const area2 = setarea()
+          console.log(area2)
+
+
+     // es6 den once nasil yapilirdi
+     
+     if(a=== null || a=== undefined){
+        a=0
+     }
+
+     if(b=== null || b === undefined){
+        b=0
+     }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let salary ;
+
+// ternary version 
+        alert(salary!== null && salary !== undifined ?salary:1500)
+
+// if version
+if(salary!== null && salary!== undifined){
+    alert(salary)
+
+}
+// nullish = sadece nn ve undifind durumunda ikinci kisma girer
+        alert(salary?? 15000)
+
+// short circuit
+        salry ?? alert ("bos gecilemez")
+        salary || alert("bos gecilemez")
+        
+    </script>
+</body>
+</html>
